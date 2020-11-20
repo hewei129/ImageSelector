@@ -1,0 +1,3 @@
+include ':selpic_lib'
+include ':app'
+rootProject.name = "ImageSelector"

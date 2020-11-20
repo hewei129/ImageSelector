@@ -1,0 +1,7 @@
+<resources>
+    <string name="label_take_photo">拍照</string>
+    <string name="label_album">从相册选择</string>
+    <string name="label_cancel">取消</string>
+    <string name="label_confirm">确认</string>
+    <string name="label_rotate">旋转</string>
+</resources>

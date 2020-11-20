@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+
+    <style name="bt_no_shadow" parent="@style/Widget.AppCompat.Button.Borderless"/>
+
+
+</resources>
