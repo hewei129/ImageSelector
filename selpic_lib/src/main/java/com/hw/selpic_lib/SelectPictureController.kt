@@ -93,23 +93,26 @@ class SelectPictureController: SelectPicturePopupWindow.OnSelectedListener {
     ) {
         this.mContext = mContext
         mFragment = fragment
-        initPopwindows()
+        initPopwindows(false)
     }
     constructor(mContext: Context?) {
         this.mContext = mContext
-        initPopwindows()
+        initPopwindows(false)
     }
-
-
-
-    private fun initPopwindows() {
+    constructor(mContext: Context?, isDarkMode: Boolean) {
+        this.mContext = mContext
+        initPopwindows(isDarkMode)
+    }
+    private fun initPopwindows(isDarkMode: Boolean) {
         mDestinationUri =
             Uri.fromFile(File(mContext!!.cacheDir, "cropImage.jpeg"))
         mTempPhotoPath =
             Environment.getExternalStorageDirectory().absoluteFile.toString() + "/photo.jpeg"
-        mSelectPicturePopupWindow = SelectPicturePopupWindow(mContext!!)
+        mSelectPicturePopupWindow = SelectPicturePopupWindow(mContext!!, isDarkMode)
         mSelectPicturePopupWindow!!.setOnSelectedListener(this)
     }
+
+
 
 
     fun showPopWindows() {
