@@ -22,7 +22,7 @@ import com.hw.selpic_lib.R
  * @description
  */
 
-class SelectPicturePopupWindow(context: Context) :
+class SelectPicturePopupWindow(context: Context, isDarkMode: Boolean) :
     PopupWindow(context), View.OnClickListener {
     private val takePhotoBtn: Button
     private val pickPictureBtn: Button
@@ -106,7 +106,9 @@ class SelectPicturePopupWindow(context: Context) :
     init {
         val inflater =
             context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        mMenuView = inflater.inflate(R.layout.layout_picture_selector, null)
+        mMenuView = if(isDarkMode)
+            inflater.inflate(R.layout.layout_picture_selector_dark, null)
+        else inflater.inflate(R.layout.layout_picture_selector, null)
         takePhotoBtn =
             mMenuView.findViewById(R.id.picture_selector_take_photo_btn)
         pickPictureBtn =

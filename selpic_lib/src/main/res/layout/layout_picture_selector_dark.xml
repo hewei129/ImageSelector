@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_pop_root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="#7f000000"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:background="#666"
+        android:orientation="vertical">
+
+        <Button
+            style="@style/bt_no_shadow"
+            android:id="@+id/picture_selector_take_photo_btn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/layout_color_selector2"
+            android:text="@string/label_take_photo"
+            android:textColor="#ccc"
+            android:textSize="16sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+            android:background="#ccc"
+            />
+
+        <Button
+            style="@style/bt_no_shadow"
+            android:id="@+id/picture_selector_pick_picture_btn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/layout_color_selector2"
+            android:text="@string/label_album"
+            android:textColor="#ccc"
+            android:textSize="16sp"/>
+
+        <Button
+            style="@style/bt_no_shadow"
+            android:id="@+id/picture_selector_cancel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+           android:layout_marginTop="8dp"
+            android:background="@drawable/layout_color_selector2"
+            android:text="@string/label_cancel"
+            android:textColor="#ccc"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>
