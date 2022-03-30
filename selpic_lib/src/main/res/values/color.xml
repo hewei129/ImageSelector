@@ -2,4 +2,6 @@
 <resources>
     <color name="nomor_app_bg_color">#fff4f4f4</color>
     <color name="transparent_background">#80000000</color>
+    <color name="color_666">#666666</color>
+    <color name="color_333">#333333</color>
 </resources>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android" tools:ignore="MissingDefaultResource">
 
-    <item android:drawable="#666666" android:state_pressed="true"></item>
-    <item android:drawable="#333333"></item>
+    <item android:drawable="@color/color_666" android:state_pressed="true"></item>
+    <item android:drawable="@color/color_333"></item>
 
 </selector>
