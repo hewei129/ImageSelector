@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity(), SelectPictureController.OnPictureSelec
         setContentView(R.layout.activity_main)
         selectPictureController.mOnPictureSelectedListener = this
         tv_sel.setOnClickListener {
-            selectPictureController.showPopWindows(true)
+            selectPictureController.showPopWindows(false)
         }
     }
 
